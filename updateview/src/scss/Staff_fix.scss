@@ -1,0 +1,1465 @@
+@use "utils" as *;
+@use "global" as *;
+
+.staff-fix {
+  &.root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    min-height: 806px;
+  }
+  .rect {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 743px;
+    left: 0px;
+    width: 1110px;
+    height: 63px;
+    background-color: rgb(255, 255, 255);
+  }
+  .info {
+    position: absolute;
+    top: 24px;
+    right: auto;
+    bottom: auto;
+    left: 16px;
+    width: 34px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .rect1 {
+    position: absolute;
+    top: 16px;
+    right: 1005px;
+    bottom: 759px;
+    left: 62px;
+    width: 43px;
+    height: 31px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 8px 8px 8px 8px;
+  }
+  .info1 {
+    position: absolute;
+    top: 24px;
+    right: auto;
+    bottom: auto;
+    left: 71px;
+    width: 16px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .image {
+    position: absolute;
+    top: 28px;
+    right: 1014px;
+    bottom: 770px;
+    left: 88px;
+    width: 8px;
+    height: 8px;
+  }
+  .info2 {
+    position: absolute;
+    top: 24px;
+    right: auto;
+    bottom: auto;
+    left: 117px;
+    width: 43px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .image1 {
+    position: absolute;
+    top: 24px;
+    right: 901px;
+    bottom: 766px;
+    left: 193px;
+    width: 16px;
+    height: 16px;
+  }
+  .info11 {
+    position: absolute;
+    top: 25px;
+    right: auto;
+    bottom: auto;
+    left: 217px;
+    width: 50px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(158, 158, 158);
+  }
+  .rect2 {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    bottom: 758px;
+    left: 955px;
+    width: 139px;
+    height: 32px;
+    background-color: rgb(66, 107, 31);
+    border-radius: 8px 8px 8px 8px;
+  }
+  .image11 {
+    position: absolute;
+    top: 24px;
+    right: 127px;
+    bottom: 766px;
+    left: 967px;
+    width: 16px;
+    height: 16px;
+  }
+  .info21 {
+    position: absolute;
+    top: 25px;
+    right: auto;
+    bottom: auto;
+    left: 991px;
+    width: 91px;
+    height: 15px;
+    font: 700 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+  }
+  .rect3 {
+    position: absolute;
+    top: 64px;
+    right: 0px;
+    bottom: 694px;
+    left: 0px;
+    width: 1110px;
+    height: 48px;
+    background-color: rgb(255, 255, 255);
+  }
+  .text {
+    position: absolute;
+    top: 80px;
+    right: auto;
+    bottom: auto;
+    left: 34.5px;
+    display: flex;
+    justify-content: center;
+    width: 84px;
+    height: 17px;
+    font: 700 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .text1 {
+    position: absolute;
+    top: 80px;
+    right: auto;
+    bottom: auto;
+    left: 153px;
+    width: 59px;
+    height: 17px;
+    font: 700 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .image12 {
+    position: absolute;
+    top: 81px;
+    right: 836px;
+    bottom: 709px;
+    left: 258px;
+    width: 16px;
+    height: 16px;
+  }
+  .text2 {
+    position: absolute;
+    top: 80px;
+    right: auto;
+    bottom: auto;
+    left: 290px;
+    width: 72px;
+    height: 17px;
+    font: 700 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .image13 {
+    position: absolute;
+    top: 80px;
+    right: 700px;
+    bottom: 710px;
+    left: 394px;
+    width: 16px;
+    height: 16px;
+  }
+  .text3 {
+    position: absolute;
+    top: 80px;
+    right: auto;
+    bottom: auto;
+    left: 426px;
+    width: 35px;
+    height: 17px;
+    font: 700 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .image14 {
+    position: absolute;
+    top: 81px;
+    right: 563px;
+    bottom: 709px;
+    left: 531px;
+    width: 16px;
+    height: 16px;
+  }
+  .text4 {
+    position: absolute;
+    top: 80px;
+    right: auto;
+    bottom: auto;
+    left: 563px;
+    width: 61px;
+    height: 17px;
+    font: 700 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text5 {
+    position: absolute;
+    top: 80px;
+    right: auto;
+    bottom: auto;
+    left: 700px;
+    width: 112px;
+    height: 17px;
+    font: 700 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text6 {
+    position: absolute;
+    top: 80px;
+    right: auto;
+    bottom: auto;
+    left: 837px;
+    width: 47px;
+    height: 17px;
+    font: 700 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .image15 {
+    position: absolute;
+    top: 80px;
+    right: 153px;
+    bottom: 710px;
+    left: 941px;
+    width: 16px;
+    height: 16px;
+  }
+  .text7 {
+    position: absolute;
+    top: 80px;
+    right: auto;
+    bottom: auto;
+    left: 1009px;
+    display: flex;
+    justify-content: center;
+    width: 49px;
+    height: 17px;
+    font: 700 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .rect4 {
+    position: absolute;
+    top: 113px;
+    right: 0px;
+    bottom: 631px;
+    left: 0px;
+    width: 1110px;
+    height: 62px;
+    background-color: rgb(250, 250, 245);
+  }
+  .text11 {
+    position: absolute;
+    top: 136px;
+    right: auto;
+    bottom: auto;
+    left: 56.5px;
+    display: flex;
+    justify-content: center;
+    width: 59px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .text12 {
+    position: absolute;
+    top: 136px;
+    right: auto;
+    bottom: auto;
+    left: 172px;
+    width: 109px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text13 {
+    position: absolute;
+    top: 136px;
+    right: auto;
+    bottom: auto;
+    left: 329px;
+    width: 89px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text14 {
+    position: absolute;
+    top: 136px;
+    right: auto;
+    bottom: auto;
+    left: 485px;
+    width: 42px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text15 {
+    position: absolute;
+    top: 136px;
+    right: auto;
+    bottom: auto;
+    left: 641px;
+    width: 92px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .rect5 {
+    position: absolute;
+    top: 129px;
+    right: 230px;
+    bottom: 646px;
+    left: 797px;
+    width: 83px;
+    height: 31px;
+    background-color: rgb(235, 249, 241);
+    border-radius: 15.5px 15.5px 15.5px 15.5px;
+  }
+  .info3 {
+    position: absolute;
+    top: 137px;
+    right: auto;
+    bottom: auto;
+    left: 809px;
+    width: 59px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(31, 146, 84);
+  }
+  .image2 {
+    position: absolute;
+    top: 133px;
+    right: 94px;
+    bottom: 649px;
+    left: 992px;
+    width: 24px;
+    height: 24px;
+  }
+  .image21 {
+    position: absolute;
+    top: 133px;
+    right: 54px;
+    bottom: 649px;
+    left: 1032px;
+    width: 24px;
+    height: 24px;
+  }
+  .rect6 {
+    position: absolute;
+    top: 176px;
+    right: 0px;
+    bottom: 568px;
+    left: 0px;
+    width: 1110px;
+    height: 62px;
+    background-color: rgb(255, 255, 255);
+  }
+  .text16 {
+    position: absolute;
+    top: 199px;
+    right: auto;
+    bottom: auto;
+    left: 56.5px;
+    display: flex;
+    justify-content: center;
+    width: 59px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .text17 {
+    position: absolute;
+    top: 199px;
+    right: auto;
+    bottom: auto;
+    left: 172px;
+    width: 61px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text18 {
+    position: absolute;
+    top: 199px;
+    right: auto;
+    bottom: auto;
+    left: 329px;
+    width: 89px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text19 {
+    position: absolute;
+    top: 199px;
+    right: auto;
+    bottom: auto;
+    left: 485px;
+    width: 42px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text110 {
+    position: absolute;
+    top: 199px;
+    right: auto;
+    bottom: auto;
+    left: 641px;
+    width: 119px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .rect51 {
+    position: absolute;
+    top: 192px;
+    right: 230px;
+    bottom: 583px;
+    left: 797px;
+    width: 83px;
+    height: 31px;
+    background-color: rgb(235, 249, 241);
+    border-radius: 15.5px 15.5px 15.5px 15.5px;
+  }
+  .info31 {
+    position: absolute;
+    top: 200px;
+    right: auto;
+    bottom: auto;
+    left: 809px;
+    width: 59px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(31, 146, 84);
+  }
+  .image22 {
+    position: absolute;
+    top: 196px;
+    right: 94px;
+    bottom: 586px;
+    left: 992px;
+    width: 24px;
+    height: 24px;
+  }
+  .image23 {
+    position: absolute;
+    top: 196px;
+    right: 54px;
+    bottom: 586px;
+    left: 1032px;
+    width: 24px;
+    height: 24px;
+  }
+  .rect41 {
+    position: absolute;
+    top: 239px;
+    right: 0px;
+    bottom: 505px;
+    left: 0px;
+    width: 1110px;
+    height: 62px;
+    background-color: rgb(250, 250, 245);
+  }
+  .text111 {
+    position: absolute;
+    top: 262px;
+    right: auto;
+    bottom: auto;
+    left: 56.5px;
+    display: flex;
+    justify-content: center;
+    width: 59px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .text112 {
+    position: absolute;
+    top: 262px;
+    right: auto;
+    bottom: auto;
+    left: 172px;
+    width: 76px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text113 {
+    position: absolute;
+    top: 262px;
+    right: auto;
+    bottom: auto;
+    left: 329px;
+    width: 89px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text114 {
+    position: absolute;
+    top: 262px;
+    right: auto;
+    bottom: auto;
+    left: 485px;
+    width: 74px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text115 {
+    position: absolute;
+    top: 262px;
+    right: auto;
+    bottom: auto;
+    left: 641px;
+    width: 119px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .rect7 {
+    position: absolute;
+    top: 255px;
+    right: 242px;
+    bottom: 520px;
+    left: 797px;
+    width: 71px;
+    height: 31px;
+    background-color: rgb(254, 242, 229);
+    border-radius: 15.5px 15.5px 15.5px 15.5px;
+  }
+  .info4 {
+    position: absolute;
+    top: 263px;
+    right: auto;
+    bottom: auto;
+    left: 809px;
+    width: 47px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(205, 98, 0);
+  }
+  .image24 {
+    position: absolute;
+    top: 259px;
+    right: 94px;
+    bottom: 523px;
+    left: 992px;
+    width: 24px;
+    height: 24px;
+  }
+  .image25 {
+    position: absolute;
+    top: 259px;
+    right: 54px;
+    bottom: 523px;
+    left: 1032px;
+    width: 24px;
+    height: 24px;
+  }
+  .rect61 {
+    position: absolute;
+    top: 302px;
+    right: 0px;
+    bottom: 442px;
+    left: 0px;
+    width: 1110px;
+    height: 62px;
+    background-color: rgb(255, 255, 255);
+  }
+  .text116 {
+    position: absolute;
+    top: 325px;
+    right: auto;
+    bottom: auto;
+    left: 56.5px;
+    display: flex;
+    justify-content: center;
+    width: 59px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .text117 {
+    position: absolute;
+    top: 325px;
+    right: auto;
+    bottom: auto;
+    left: 172px;
+    width: 85px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text118 {
+    position: absolute;
+    top: 325px;
+    right: auto;
+    bottom: auto;
+    left: 329px;
+    width: 89px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text119 {
+    position: absolute;
+    top: 325px;
+    right: auto;
+    bottom: auto;
+    left: 485px;
+    width: 61px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text120 {
+    position: absolute;
+    top: 325px;
+    right: auto;
+    bottom: auto;
+    left: 641px;
+    width: 92px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .rect71 {
+    position: absolute;
+    top: 318px;
+    right: 242px;
+    bottom: 457px;
+    left: 797px;
+    width: 71px;
+    height: 31px;
+    background-color: rgb(254, 242, 229);
+    border-radius: 15.5px 15.5px 15.5px 15.5px;
+  }
+  .info41 {
+    position: absolute;
+    top: 326px;
+    right: auto;
+    bottom: auto;
+    left: 809px;
+    width: 47px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(205, 98, 0);
+  }
+  .image26 {
+    position: absolute;
+    top: 322px;
+    right: 94px;
+    bottom: 460px;
+    left: 992px;
+    width: 24px;
+    height: 24px;
+  }
+  .image27 {
+    position: absolute;
+    top: 322px;
+    right: 54px;
+    bottom: 460px;
+    left: 1032px;
+    width: 24px;
+    height: 24px;
+  }
+  .rect42 {
+    position: absolute;
+    top: 365px;
+    right: 0px;
+    bottom: 379px;
+    left: 0px;
+    width: 1110px;
+    height: 62px;
+    background-color: rgb(250, 250, 245);
+  }
+  .text121 {
+    position: absolute;
+    top: 388px;
+    right: auto;
+    bottom: auto;
+    left: 56.5px;
+    display: flex;
+    justify-content: center;
+    width: 59px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .text122 {
+    position: absolute;
+    top: 388px;
+    right: auto;
+    bottom: auto;
+    left: 172px;
+    width: 76px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text123 {
+    position: absolute;
+    top: 388px;
+    right: auto;
+    bottom: auto;
+    left: 329px;
+    width: 89px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text124 {
+    position: absolute;
+    top: 388px;
+    right: auto;
+    bottom: auto;
+    left: 485px;
+    width: 52px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text125 {
+    position: absolute;
+    top: 388px;
+    right: auto;
+    bottom: auto;
+    left: 641px;
+    width: 119px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .rect8 {
+    position: absolute;
+    top: 381px;
+    right: 232px;
+    bottom: 394px;
+    left: 797px;
+    width: 81px;
+    height: 31px;
+    background-color: rgb(251, 231, 232);
+    border-radius: 15.5px 15.5px 15.5px 15.5px;
+  }
+  .info5 {
+    position: absolute;
+    top: 389px;
+    right: auto;
+    bottom: auto;
+    left: 809px;
+    width: 57px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(163, 13, 17);
+  }
+  .image28 {
+    position: absolute;
+    top: 385px;
+    right: 94px;
+    bottom: 397px;
+    left: 992px;
+    width: 24px;
+    height: 24px;
+  }
+  .image29 {
+    position: absolute;
+    top: 385px;
+    right: 54px;
+    bottom: 397px;
+    left: 1032px;
+    width: 24px;
+    height: 24px;
+  }
+  .rect62 {
+    position: absolute;
+    top: 428px;
+    right: 0px;
+    bottom: 316px;
+    left: 0px;
+    width: 1110px;
+    height: 62px;
+    background-color: rgb(255, 255, 255);
+  }
+  .text126 {
+    position: absolute;
+    top: 451px;
+    right: auto;
+    bottom: auto;
+    left: 56.5px;
+    display: flex;
+    justify-content: center;
+    width: 59px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .text127 {
+    position: absolute;
+    top: 451px;
+    right: auto;
+    bottom: auto;
+    left: 172px;
+    width: 87px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text128 {
+    position: absolute;
+    top: 451px;
+    right: auto;
+    bottom: auto;
+    left: 329px;
+    width: 89px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text129 {
+    position: absolute;
+    top: 451px;
+    right: auto;
+    bottom: auto;
+    left: 485px;
+    width: 52px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text130 {
+    position: absolute;
+    top: 451px;
+    right: auto;
+    bottom: auto;
+    left: 641px;
+    width: 92px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .rect52 {
+    position: absolute;
+    top: 444px;
+    right: 230px;
+    bottom: 331px;
+    left: 797px;
+    width: 83px;
+    height: 31px;
+    background-color: rgb(235, 249, 241);
+    border-radius: 15.5px 15.5px 15.5px 15.5px;
+  }
+  .info32 {
+    position: absolute;
+    top: 452px;
+    right: auto;
+    bottom: auto;
+    left: 809px;
+    width: 59px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(31, 146, 84);
+  }
+  .image210 {
+    position: absolute;
+    top: 448px;
+    right: 94px;
+    bottom: 334px;
+    left: 992px;
+    width: 24px;
+    height: 24px;
+  }
+  .image211 {
+    position: absolute;
+    top: 448px;
+    right: 54px;
+    bottom: 334px;
+    left: 1032px;
+    width: 24px;
+    height: 24px;
+  }
+  .rect43 {
+    position: absolute;
+    top: 491px;
+    right: 0px;
+    bottom: 253px;
+    left: 0px;
+    width: 1110px;
+    height: 62px;
+    background-color: rgb(250, 250, 245);
+  }
+  .text131 {
+    position: absolute;
+    top: 514px;
+    right: auto;
+    bottom: auto;
+    left: 56.5px;
+    display: flex;
+    justify-content: center;
+    width: 59px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .text132 {
+    position: absolute;
+    top: 514px;
+    right: auto;
+    bottom: auto;
+    left: 172px;
+    width: 87px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text133 {
+    position: absolute;
+    top: 514px;
+    right: auto;
+    bottom: auto;
+    left: 329px;
+    width: 89px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text134 {
+    position: absolute;
+    top: 514px;
+    right: auto;
+    bottom: auto;
+    left: 485px;
+    width: 61px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text135 {
+    position: absolute;
+    top: 514px;
+    right: auto;
+    bottom: auto;
+    left: 641px;
+    width: 92px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .rect53 {
+    position: absolute;
+    top: 507px;
+    right: 230px;
+    bottom: 268px;
+    left: 797px;
+    width: 83px;
+    height: 31px;
+    background-color: rgb(235, 249, 241);
+    border-radius: 15.5px 15.5px 15.5px 15.5px;
+  }
+  .info33 {
+    position: absolute;
+    top: 515px;
+    right: auto;
+    bottom: auto;
+    left: 809px;
+    width: 59px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(31, 146, 84);
+  }
+  .image212 {
+    position: absolute;
+    top: 511px;
+    right: 94px;
+    bottom: 271px;
+    left: 992px;
+    width: 24px;
+    height: 24px;
+  }
+  .image213 {
+    position: absolute;
+    top: 511px;
+    right: 54px;
+    bottom: 271px;
+    left: 1032px;
+    width: 24px;
+    height: 24px;
+  }
+  .rect63 {
+    position: absolute;
+    top: 554px;
+    right: 0px;
+    bottom: 190px;
+    left: 0px;
+    width: 1110px;
+    height: 62px;
+    background-color: rgb(255, 255, 255);
+  }
+  .text136 {
+    position: absolute;
+    top: 577px;
+    right: auto;
+    bottom: auto;
+    left: 47px;
+    display: flex;
+    justify-content: center;
+    width: 59px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .text137 {
+    position: absolute;
+    top: 577px;
+    right: auto;
+    bottom: auto;
+    left: 153px;
+    width: 46px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text138 {
+    position: absolute;
+    top: 577px;
+    right: auto;
+    bottom: auto;
+    left: 290px;
+    width: 61px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text139 {
+    position: absolute;
+    top: 577px;
+    right: auto;
+    bottom: auto;
+    left: 426px;
+    width: 89px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text140 {
+    position: absolute;
+    top: 577px;
+    right: auto;
+    bottom: auto;
+    left: 563px;
+    width: 61px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text141 {
+    position: absolute;
+    top: 577px;
+    right: auto;
+    bottom: auto;
+    left: 700px;
+    width: 119px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .rect54 {
+    position: absolute;
+    top: 570px;
+    right: 190px;
+    bottom: 205px;
+    left: 837px;
+    width: 83px;
+    height: 31px;
+    background-color: rgb(235, 249, 241);
+    border-radius: 15.5px 15.5px 15.5px 15.5px;
+  }
+  .info34 {
+    position: absolute;
+    top: 578px;
+    right: auto;
+    bottom: auto;
+    left: 849px;
+    width: 59px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(31, 146, 84);
+  }
+  .image214 {
+    position: absolute;
+    top: 574px;
+    right: 84px;
+    bottom: 208px;
+    left: 1002px;
+    width: 24px;
+    height: 24px;
+  }
+  .image215 {
+    position: absolute;
+    top: 574px;
+    right: 44px;
+    bottom: 208px;
+    left: 1042px;
+    width: 24px;
+    height: 24px;
+  }
+  .rect44 {
+    position: absolute;
+    top: 617px;
+    right: 0px;
+    bottom: 127px;
+    left: 0px;
+    width: 1110px;
+    height: 62px;
+    background-color: rgb(250, 250, 245);
+  }
+  .text142 {
+    position: absolute;
+    top: 640px;
+    right: auto;
+    bottom: auto;
+    left: 56.5px;
+    display: flex;
+    justify-content: center;
+    width: 59px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .text143 {
+    position: absolute;
+    top: 640px;
+    right: auto;
+    bottom: auto;
+    left: 172px;
+    width: 57px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text144 {
+    position: absolute;
+    top: 640px;
+    right: auto;
+    bottom: auto;
+    left: 329px;
+    width: 89px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text145 {
+    position: absolute;
+    top: 640px;
+    right: auto;
+    bottom: auto;
+    left: 485px;
+    width: 61px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text146 {
+    position: absolute;
+    top: 640px;
+    right: auto;
+    bottom: auto;
+    left: 641px;
+    width: 92px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .rect81 {
+    position: absolute;
+    top: 633px;
+    right: 232px;
+    bottom: 142px;
+    left: 797px;
+    width: 81px;
+    height: 31px;
+    background-color: rgb(251, 231, 232);
+    border-radius: 15.5px 15.5px 15.5px 15.5px;
+  }
+  .info51 {
+    position: absolute;
+    top: 641px;
+    right: auto;
+    bottom: auto;
+    left: 809px;
+    width: 57px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(163, 13, 17);
+  }
+  .image216 {
+    position: absolute;
+    top: 637px;
+    right: 94px;
+    bottom: 145px;
+    left: 992px;
+    width: 24px;
+    height: 24px;
+  }
+  .image217 {
+    position: absolute;
+    top: 637px;
+    right: 54px;
+    bottom: 145px;
+    left: 1032px;
+    width: 24px;
+    height: 24px;
+  }
+  .rect64 {
+    position: absolute;
+    top: 680px;
+    right: 0px;
+    bottom: 64px;
+    left: 0px;
+    width: 1110px;
+    height: 62px;
+    background-color: rgb(255, 255, 255);
+  }
+  .text147 {
+    position: absolute;
+    top: 703px;
+    right: auto;
+    bottom: auto;
+    left: 56.5px;
+    display: flex;
+    justify-content: center;
+    width: 59px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .text148 {
+    position: absolute;
+    top: 703px;
+    right: auto;
+    bottom: auto;
+    left: 172px;
+    width: 86px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text149 {
+    position: absolute;
+    top: 703px;
+    right: auto;
+    bottom: auto;
+    left: 329px;
+    width: 89px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text150 {
+    position: absolute;
+    top: 703px;
+    right: auto;
+    bottom: auto;
+    left: 485px;
+    width: 52px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .text151 {
+    position: absolute;
+    top: 703px;
+    right: auto;
+    bottom: auto;
+    left: 641px;
+    width: 92px;
+    height: 17px;
+    font: 500 14px/1.21 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+  }
+  .rect72 {
+    position: absolute;
+    top: 696px;
+    right: 242px;
+    bottom: 79px;
+    left: 797px;
+    width: 71px;
+    height: 31px;
+    background-color: rgb(254, 242, 229);
+    border-radius: 15.5px 15.5px 15.5px 15.5px;
+  }
+  .info42 {
+    position: absolute;
+    top: 704px;
+    right: auto;
+    bottom: auto;
+    left: 809px;
+    width: 47px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(205, 98, 0);
+  }
+  .image218 {
+    position: absolute;
+    top: 700px;
+    right: 94px;
+    bottom: 82px;
+    left: 992px;
+    width: 24px;
+    height: 24px;
+  }
+  .image219 {
+    position: absolute;
+    top: 700px;
+    right: 54px;
+    bottom: 82px;
+    left: 1032px;
+    width: 24px;
+    height: 24px;
+  }
+  .rect65 {
+    position: absolute;
+    top: 743px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 1110px;
+    height: 63px;
+    background-color: rgb(255, 255, 255);
+  }
+  .info12 {
+    position: absolute;
+    top: 767px;
+    right: auto;
+    bottom: auto;
+    left: 444px;
+    width: 53px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(158, 158, 158);
+  }
+  .rect9 {
+    position: absolute;
+    top: 759px;
+    right: 570px;
+    bottom: 16px;
+    left: 509px;
+    width: 31px;
+    height: 31px;
+    background-color: rgb(66, 107, 31);
+    border-radius: 8px 8px 8px 8px;
+  }
+  .info6 {
+    position: absolute;
+    top: 767px;
+    right: auto;
+    bottom: auto;
+    left: 520px;
+    display: flex;
+    justify-content: center;
+    width: 9px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  .rect10 {
+    position: absolute;
+    top: 759px;
+    right: 527px;
+    bottom: 16px;
+    left: 552px;
+    width: 31px;
+    height: 31px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 8px 8px 8px 8px;
+  }
+  .info7 {
+    position: absolute;
+    top: 767px;
+    right: auto;
+    bottom: auto;
+    left: 563px;
+    display: flex;
+    justify-content: center;
+    width: 9px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .rect101 {
+    position: absolute;
+    top: 759px;
+    right: 484px;
+    bottom: 16px;
+    left: 595px;
+    width: 31px;
+    height: 31px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 8px 8px 8px 8px;
+  }
+  .info8 {
+    position: absolute;
+    top: 767px;
+    right: auto;
+    bottom: auto;
+    left: 606px;
+    display: flex;
+    justify-content: center;
+    width: 9px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .info13 {
+    position: absolute;
+    top: 767px;
+    right: auto;
+    bottom: auto;
+    left: 638px;
+    width: 29px;
+    height: 15px;
+    font: 500 12px/1.25 "Montserrat", Helvetica, Arial, serif;
+    color: rgb(158, 158, 158);
+  }
+}

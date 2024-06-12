@@ -1,0 +1,623 @@
+.calender.libraryMain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 32px 32px 32px 32px;
+  overflow: hidden;
+}
+.calender .librarySection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.calender .flexRow {
+  position: relative;
+  display: flex;
+  margin: 67px auto 165px;
+  width: 86.03%;
+  max-width: 1465.9453125px;
+}
+@media (max-width: 1199px) {
+  .calender .flexRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 0px;
+  }
+}
+@media (max-width: 991px) {
+  .calender .flexRow {
+    margin: 67px auto 150px;
+  }
+}
+@media (max-width: 575px) {
+  .calender .flexRow {
+    margin: 67px auto 80px;
+  }
+}
+@media (max-width: 383px) {
+  .calender .flexRow {
+    margin: 50px auto;
+  }
+}
+.calender .flexCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px 0px;
+  margin: 9px 0px 0px;
+  width: 1338px;
+  min-width: 0px;
+}
+@media (max-width: 1199px) {
+  .calender .flexCol {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.calender .headerRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  width: 95.81%;
+}
+@media (max-width: 575px) {
+  .calender .headerRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+.calender .pageTitle {
+  position: relative;
+  font: 500 40px/1 "Newsreader", Helvetica, Arial, serif;
+  color: #141e0c;
+  letter-spacing: -0.4px;
+}
+@media (max-width: 991px) {
+  .calender .pageTitle {
+    align-items: flex-start;
+    font-size: 36px;
+  }
+}
+@media (max-width: 575px) {
+  .calender .pageTitle {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+  }
+}
+@media (max-width: 479px) {
+  .calender .pageTitle {
+    font-size: 32px;
+  }
+}
+.calender .navRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  margin: 2px 0px 12px;
+  width: 229px;
+  min-width: 0px;
+}
+@media (max-width: 575px) {
+  .calender .navRow {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+@media (max-width: 383px) {
+  .calender .navRow {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+  }
+}
+.calender .navItem {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 600 20px/1.29 "Libre Franklin", Helvetica, Arial, serif;
+  color: #141e0c;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .calender .navItem {
+    font-size: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .calender .navItem {
+    font-size: 16px;
+  }
+}
+.calender .infoCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 70px 0px;
+  width: 95.96%;
+}
+@media (max-width: 383px) {
+  .calender .infoCol {
+    gap: 50px 0px;
+  }
+}
+.calender .dateRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  margin: 0px 0px 0px 13.55%;
+  width: 767px;
+  max-width: 85%;
+}
+@media (max-width: 1399px) {
+  .calender .dateRow {
+    margin: 0px auto;
+  }
+}
+@media (max-width: 991px) {
+  .calender .dateRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+.calender .dateText {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  margin: 63px 0px 33px;
+  font: 400 20px/1.29 "Libre Franklin", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 991px) {
+  .calender .dateText {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .calender .dateText {
+    font-size: 16px;
+  }
+}
+.calender .dateImage {
+  position: relative;
+  width: 399px;
+  min-width: 0px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .calender .dateImage {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+    max-width: 399px;
+  }
+}
+.calender .contentCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 105px 0px;
+}
+@media (max-width: 575px) {
+  .calender .contentCol {
+    gap: 80px 0px;
+  }
+}
+@media (max-width: 383px) {
+  .calender .contentCol {
+    gap: 50px 0px;
+  }
+}
+.calender .dayRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 10px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .calender .dayRow {
+    flex-direction: column;
+    gap: 30px 10px;
+  }
+}
+.calender .dayContentBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px 0px;
+  width: 302px;
+  min-width: 0px;
+  background-color: #edefe4;
+  border-radius: 24px 24px 24px 24px;
+  padding: 31px 14px 142px 16px;
+  outline: 3px solid #e1e4d9;
+  outline-offset: -3px;
+}
+@media (max-width: 767px) {
+  .calender .dayContentBox {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+@media (max-width: 575px) {
+  .calender .dayContentBox {
+    padding: 31px 14px 80px 16px;
+  }
+}
+@media (max-width: 383px) {
+  .calender .dayContentBox {
+    padding: 31px 8px 50px 8px;
+  }
+}
+.calender .dayTitle {
+  position: relative;
+  width: 219.9921875px;
+  max-width: 85%;
+  font: 400 32px/1.29 "Newsreader", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 991px) {
+  .calender .dayTitle {
+    align-items: flex-start;
+    font-size: 30px;
+  }
+}
+@media (max-width: 479px) {
+  .calender .dayTitle {
+    font-size: 26px;
+  }
+}
+.calender .daySubtitle {
+  position: relative;
+  font: 400 20px/1.29 "Libre Franklin", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 991px) {
+  .calender .daySubtitle {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .calender .daySubtitle {
+    font-size: 16px;
+  }
+}
+.calender .summaryContentBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 301px;
+  min-width: 0px;
+  background-color: #edefe4;
+  border-radius: 24px 24px 24px 24px;
+  outline: 3px solid #e1e4d9;
+  outline-offset: -3px;
+}
+@media (max-width: 767px) {
+  .calender .summaryContentBox {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.calender .summaryCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px 0px;
+  margin: 27px 13px 152px 18px;
+}
+@media (max-width: 991px) {
+  .calender .summaryCol {
+    margin: 27px 13px 150px 18px;
+  }
+}
+@media (max-width: 575px) {
+  .calender .summaryCol {
+    margin: 27px 13px 80px 16px;
+  }
+}
+@media (max-width: 383px) {
+  .calender .summaryCol {
+    margin: 27px 8px 50px;
+  }
+}
+.calender .summaryTitle {
+  position: relative;
+  width: 152.0078125px;
+  max-width: 85%;
+  font: 400 32px/1.29 "Newsreader", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 991px) {
+  .calender .summaryTitle {
+    align-items: flex-start;
+    font-size: 30px;
+  }
+}
+@media (max-width: 479px) {
+  .calender .summaryTitle {
+    font-size: 26px;
+  }
+}
+.calender .summarySubtitle {
+  position: relative;
+  font: 400 20px/1.29 "Libre Franklin", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 991px) {
+  .calender .summarySubtitle {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .calender .summarySubtitle {
+    font-size: 16px;
+  }
+}
+.calender .midWeekContentBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px 0px;
+  width: 301px;
+  min-width: 0px;
+  background-color: #edefe4;
+  border-radius: 24px 24px 24px 24px;
+  padding: 35px 24px 158px 30px;
+  outline: 3px solid #e1e4d9;
+  outline-offset: -3px;
+}
+@media (max-width: 991px) {
+  .calender .midWeekContentBox {
+    padding: 35px 24px 150px 30px;
+  }
+}
+@media (max-width: 767px) {
+  .calender .midWeekContentBox {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+@media (max-width: 575px) {
+  .calender .midWeekContentBox {
+    padding: 35px 24px 80px 30px;
+  }
+}
+@media (max-width: 383px) {
+  .calender .midWeekContentBox {
+    padding: 35px 8px 50px 8px;
+  }
+}
+.calender .midWeekTitle {
+  position: relative;
+  font: 400 32px/1.29 "Newsreader", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 991px) {
+  .calender .midWeekTitle {
+    align-items: flex-start;
+    font-size: 30px;
+  }
+}
+@media (max-width: 479px) {
+  .calender .midWeekTitle {
+    font-size: 26px;
+  }
+}
+.calender .midWeekSubtitle {
+  position: relative;
+  font: 400 20px/1.29 "Libre Franklin", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 991px) {
+  .calender .midWeekSubtitle {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .calender .midWeekSubtitle {
+    font-size: 16px;
+  }
+}
+.calender .weekendRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  width: 842px;
+  max-width: 85%;
+}
+@media (max-width: 383px) {
+  .calender .weekendRow {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+  }
+}
+.calender .weekendContentBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  min-width: 0px;
+  background-color: #edefe4;
+  border-radius: 24px 24px 24px 24px;
+  outline: 3px solid #e1e4d9;
+  outline-offset: -3px;
+}
+.calender .weekendCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px 0px;
+  margin: 28px auto 161px;
+  width: 264px;
+  max-width: 85%;
+}
+@media (max-width: 991px) {
+  .calender .weekendCol {
+    margin: 28px auto 150px;
+  }
+}
+@media (max-width: 575px) {
+  .calender .weekendCol {
+    margin: 28px auto 80px;
+  }
+}
+@media (max-width: 383px) {
+  .calender .weekendCol {
+    margin: 28px auto 50px;
+  }
+}
+.calender .weekendTitle {
+  position: relative;
+  width: 184.0078125px;
+  max-width: 85%;
+  font: 400 32px/1.29 "Newsreader", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 991px) {
+  .calender .weekendTitle {
+    align-items: flex-start;
+    font-size: 30px;
+  }
+}
+@media (max-width: 479px) {
+  .calender .weekendTitle {
+    font-size: 26px;
+  }
+}
+.calender .weekendSubtitle {
+  position: relative;
+  font: 400 20px/1.29 "Libre Franklin", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 991px) {
+  .calender .weekendSubtitle {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .calender .weekendSubtitle {
+    font-size: 16px;
+  }
+}
+.calender .endWeekContentBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px 0px;
+  width: 328px;
+  min-width: 0px;
+  background-color: #edefe4;
+  border-radius: 24px 24px 24px 24px;
+  padding: 29px 29px 163px 31px;
+  outline: 3px solid #e1e4d9;
+  outline-offset: -3px;
+}
+@media (max-width: 991px) {
+  .calender .endWeekContentBox {
+    padding: 29px 29px 150px 31px;
+  }
+}
+@media (max-width: 575px) {
+  .calender .endWeekContentBox {
+    padding: 29px 16px 80px 16px;
+  }
+}
+@media (max-width: 383px) {
+  .calender .endWeekContentBox {
+    padding: 29px 8px 50px 8px;
+  }
+}
+.calender .endWeekTitle {
+  position: relative;
+  width: 125.984375px;
+  max-width: 85%;
+  font: 400 32px/1.29 "Newsreader", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 991px) {
+  .calender .endWeekTitle {
+    align-items: flex-start;
+    font-size: 30px;
+  }
+}
+@media (max-width: 479px) {
+  .calender .endWeekTitle {
+    font-size: 26px;
+  }
+}
+.calender .endWeekSubtitle {
+  position: relative;
+  font: 400 20px/1.29 "Libre Franklin", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 991px) {
+  .calender .endWeekSubtitle {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .calender .endWeekSubtitle {
+    font-size: 16px;
+  }
+}
+.calender .logoutButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 844px;
+  min-width: 100px;
+  font: 600 20px/1.29 "Libre Franklin", Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+  background-color: #476730;
+  border-radius: 15px 15px 15px 15px;
+  padding: 8px 16px; /* Giảm padding để làm cho nút nhỏ hơn */
+
+  
+}
+@media (max-width: 1199px) {
+  .calender .logoutButton {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}

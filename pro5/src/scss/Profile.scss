@@ -1,0 +1,325 @@
+@use "utils" as *;
+@use "global" as *;
+
+.profile {
+  &.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 249, 249);
+    overflow: hidden;
+  }
+  .userSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .flexCol {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 36px 0px;
+    margin: 31px auto 424px;
+    width: 92.15%;
+    max-width: 1326.953125px;
+    @include md {
+      margin: 31px auto 150px;
+    }
+    @include xs {
+      margin: 31px auto 80px;
+    }
+    @include tn {
+      margin: 31px auto 50px;
+    }
+  }
+  .userInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 9px 0px;
+    width: 233px;
+    max-width: 85%;
+  }
+  .welcomeTitle {
+    position: relative;
+    font: 500 24px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: rgb(62, 67, 93);
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+  .currentDate {
+    position: relative;
+    font: 300 16px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: rgb(173, 167, 167);
+  }
+  .userAvatarSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px 0px;
+    margin: 0px auto;
+    width: 96.61%;
+  }
+  .avatarRect {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(229, 251, 227);
+  }
+  .editGroup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 95.01%;
+  }
+  .editWrapper {
+    position: absolute;
+    top: 28px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 93px;
+    height: 44px;
+    background-color: rgb(65, 130, 249);
+    border-radius: 8px 8px 8px 8px;
+  }
+  .editText {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 10px 32px;
+    width: 29px;
+    max-width: 85%;
+    height: 24px;
+    font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    @include xs {
+      margin: 10px 16px;
+    }
+    @include tn {
+      margin: 10px 8px;
+    }
+  }
+  .detailsRow {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 0px 10px;
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 10px;
+    }
+  }
+  .flexCol3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px 0px;
+    width: 593px;
+    min-width: 0px;
+    @include md {
+      margin-top: unset;
+      margin-bottom: unset;
+      width: 100%;
+      min-width: unset;
+    }
+  }
+  .userDetailsRow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0px 24px;
+    @include xs {
+      column-gap: 16px;
+    }
+    @include tn {
+      column-gap: 8px;
+    }
+  }
+  .userImage {
+    position: relative;
+    width: 100px;
+    min-width: 0px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .flexCol4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px 0px;
+    width: 198px;
+    min-width: 0px;
+  }
+  .userName {
+    position: relative;
+    font: 500 20px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    @include md {
+      align-items: flex-start;
+      font-size: 18px;
+    }
+    @include xxs {
+      font-size: 16px;
+    }
+  }
+  .userEmail {
+    position: relative;
+    font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+  }
+  .userAttributes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .nameLabel {
+    position: relative;
+    font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+  }
+  .nameBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0px 0px;
+    background-color: rgb(243, 251, 235);
+    border-radius: 8px 8px 8px 8px;
+  }
+  .namePlaceholder {
+    position: relative;
+    margin: 14px 0px 14px 20px;
+    width: 125px;
+    max-width: 85%;
+    font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    opacity: 0.4;
+    @include xs {
+      margin: 14px 0px 14px 16px;
+    }
+    @include tn {
+      margin: 14px 0px 14px 8px;
+    }
+  }
+  .genderLabel {
+    position: relative;
+    margin: 24px 0px 0px;
+    font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+  }
+  .genderBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0px 0px;
+    background-color: rgb(243, 251, 235);
+    border-radius: 8px 8px 8px 8px;
+  }
+  .genderIcon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    transform: translate(0, -50%);
+  }
+  .genderPlaceholder {
+    position: relative;
+    margin: 14px 0px 14px 20px;
+    width: 125px;
+    max-width: 85%;
+    font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    opacity: 0.4;
+    @include xs {
+      margin: 14px 0px 14px 16px;
+    }
+    @include tn {
+      margin: 14px 0px 14px 8px;
+    }
+  }
+  .otherAttributes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 132px 0px 0px;
+    width: 593px;
+    min-width: 0px;
+    @include md {
+      margin-top: unset;
+      margin-bottom: unset;
+      width: 100%;
+      min-width: unset;
+    }
+  }
+  .idLabel {
+    position: relative;
+    font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+  }
+  .idPlaceholder {
+    position: relative;
+    margin: 12px 0px 0px;
+    font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    background-color: rgb(243, 251, 235);
+    border-radius: 8px 8px 8px 8px;
+    padding: 14px 20px 14px 20px;
+    opacity: 0.4;
+    @include xs {
+      padding: 14px 16px 14px 16px;
+    }
+    @include tn {
+      padding: 14px 8px 14px 8px;
+    }
+  }
+  .countryLabel {
+    position: relative;
+    margin: 24px 0px 0px;
+    font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+  }
+  .countryGroup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0px 0px;
+  }
+  .countryPlaceholder {
+    position: relative;
+    min-width: 0px;
+    font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+    color: rgb(0, 0, 0);
+    background-color: rgb(243, 251, 235);
+    border-radius: 8px 8px 8px 8px;
+    padding: 14px 20px 14px 20px;
+    opacity: 0.4;
+    @include xs {
+      padding: 14px 16px 14px 16px;
+    }
+    @include tn {
+      padding: 14px 8px 14px 8px;
+    }
+  }
+  .countryFlagIcon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    transform: translate(0, -50%);
+  }
+}

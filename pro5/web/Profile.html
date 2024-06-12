@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/pro5/web/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/pro5/web/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/pro5/web/css/Profile.css" />
+    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sticky-js@1.3.0/dist/sticky.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+
+
+
+</head>
+
+<body class="flex-column">
+    <main class="profile main">
+        <section class="userSection">
+            <div class="flexCol">
+                <div class="userInfo">
+                    <h2 class="welcomeTitle">Welcome, Amanda</h2>
+                    <h5 class="currentDate">Tue, 07 June 2022</h5>
+                </div>
+                <div class="userAvatarSection">
+                    <div class="avatarRect"></div>
+                    <div class="editGroup">
+
+                        <div class="editWrapper" onclick="return_home()">
+
+                            
+
+                        </div>
+                        <div class="detailsRow">
+                            <div class="flexCol3">
+                                <div class="userDetailsRow">
+                                    <img class="userImage" src="" alt="alt text" />
+                                    <div class="flexCol4">
+                                        <h3 class="userName">Alexa Rawles</h3>
+                                        <h5 class="userEmail">alexarawles@gmail.com</h5>
+                                    </div>
+                                </div>
+                                <div class="userAttributes">
+                                    <h5 class="nameLabel">Name</h5>
+                                    <div class="nameBox">
+                                        <h5 class="namePlaceholder">Your First Name</h5>
+                                    </div>
+                                    <h5 class="genderLabel">Gender</h5>
+                                    <div class="genderBox">
+                                        <h5 class="genderPlaceholder">Your First Name</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="otherAttributes">
+                                <h5 class="idLabel">Id</h5>
+                                <div class="idPlaceholder">Your First Name</div>
+                                <h5 class="countryLabel">Country</h5>
+                                <div class="countryGroup">
+                                    <div class="countryPlaceholder">Your First Name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script>
+    function return_home(){
+        window.location="http://localhost:4000";
+
+}
+
+</script>
+
+    <script type="text/javascript">
+        AOS.init();
+        new Sticky('.sticky-effect');
+    </script>
+    <script src = "re.js"></script>
+
+</body>
+
+</html>

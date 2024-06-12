@@ -1,0 +1,310 @@
+.newe.librarySection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 32px 32px 32px 32px;
+  overflow: hidden;
+}
+.newe .mainColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 86px;
+  width: 89.31%;
+  max-width: 1286.0625px;
+}
+@media (max-width: 575px) {
+  .newe .mainColumn {
+    margin: 30px auto 80px;
+  }
+}
+@media (max-width: 383px) {
+  .newe .mainColumn {
+    margin: 30px auto 50px;
+  }
+}
+.newe .navRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  margin: 0px 12px 0px auto;
+  width: 380px;
+  max-width: 85%;
+}
+@media (max-width: 383px) {
+  .newe .navRow {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    margin: 0px 8px 0px auto;
+  }
+}
+.newe .navItem {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 10px;
+  font: 600 20px/1.29 "Libre Franklin", Helvetica, Arial, serif;
+  color: #141e0c;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .newe .navItem {
+    font-size: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .newe .navItem {
+    font-size: 16px;
+  }
+}
+.newe .navIconBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 102px;
+  min-width: 0px;
+  background-color: #476730;
+  border-radius: 18px 18px 18px 18px;
+  padding: 0px 0px 0px 14px;
+}
+@media (max-width: 383px) {
+  .newe .navIconBox {
+    padding: 0px 0px 0px 8px;
+  }
+}
+.newe .navIcon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.newe .contentColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 65px 0px;
+}
+@media (max-width: 383px) {
+  .newe .contentColumn {
+    gap: 50px 0px;
+  }
+}
+.newe .pageTitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font: 500 36px/1 "Newsreader", Helvetica, Arial, serif;
+  color: #141e0c;
+  letter-spacing: -0.36px;
+}
+@media (max-width: 991px) {
+  .newe .pageTitle {
+    font-size: 32px;
+  }
+}
+@media (max-width: 479px) {
+  .newe .pageTitle {
+    font-size: 30px;
+  }
+}
+.newe .reportColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 69px 0px;
+  width: 94.25%;
+}
+@media (max-width: 383px) {
+  .newe .reportColumn {
+    gap: 50px 0px;
+  }
+}
+.newe .reportHeaderColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 33px 0px;
+}
+.newe .reportTitle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 41.38% 0px auto;
+  width: 187px;
+  max-width: 85%;
+  font: 400 32px/1.2 "Newsreader", Helvetica, Arial, serif;
+  color: #141e0c;
+  text-align: center;
+  letter-spacing: -0.64px;
+}
+@media (max-width: 1399px) {
+  .newe .reportTitle {
+    margin: 0px auto;
+  }
+}
+@media (max-width: 991px) {
+  .newe .reportTitle {
+    font-size: 30px;
+  }
+}
+@media (max-width: 479px) {
+  .newe .reportTitle {
+    font-size: 26px;
+  }
+}
+.newe .reportContentBox {
+  position: relative;
+  display: flex;
+  gap: 0px 16px;
+  background-color: #edefe4;
+  border-radius: 24px 24px 24px 24px;
+  padding: 35px 0px 54px 25px;
+  outline: 2px solid #e1e4d9;
+  outline-offset: -2px;
+}
+@media (max-width: 1399px) {
+  .newe .reportContentBox {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 16px;
+  }
+}
+@media (max-width: 575px) {
+  .newe .reportContentBox {
+    padding: 35px 0px 54px 16px;
+  }
+}
+@media (max-width: 383px) {
+  .newe .reportContentBox {
+    padding: 35px 0px 50px 8px;
+  }
+}
+.newe .reportSubtitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 74.5px 0px 261.5px;
+  font: 700 20px/1.6 "Libre Franklin", Helvetica, Arial, serif;
+  color: #141e0c;
+  letter-spacing: 0.8px;
+}
+@media (max-width: 1399px) {
+  .newe .reportSubtitle {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .newe .reportSubtitle {
+    font-size: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .newe .reportSubtitle {
+    font-size: 16px;
+  }
+}
+.newe .reportDetailsColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 859px;
+  min-width: 0px;
+}
+@media (max-width: 1399px) {
+  .newe .reportDetailsColumn {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.newe .detailItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font: 400 16px/1.6 "Libre Franklin", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+.newe .detailItem1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 51.5px 0px 0px;
+  font: 400 16px/1.6 "Libre Franklin", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 383px) {
+  .newe .detailItem1 {
+    margin: 50px 0px 0px;
+  }
+}
+.newe .reportImage {
+  position: relative;
+  margin: 24.5px 0px 0px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.newe .detailItem2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 50.5px 0px 0px;
+  font: 400 16px/1.6 "Libre Franklin", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 383px) {
+  .newe .detailItem2 {
+    margin: 50px 0px 0px;
+  }
+}
+.newe .detailItem3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 85.5px 0px 0px;
+  font: 400 16px/1.6 "Libre Franklin", Helvetica, Arial, serif;
+  color: #141e0c;
+}
+@media (max-width: 575px) {
+  .newe .detailItem3 {
+    margin: 80px 0px 0px;
+  }
+}
+@media (max-width: 383px) {
+  .newe .detailItem3 {
+    margin: 50px 0px 0px;
+  }
+}
+.newe .reportImageBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px 40.43%;
+  width: 195px;
+  max-width: 85%;
+  background-color: #edefe4;
+  border-radius: 24px 24px 24px 24px;
+  padding: 3px 25px 0px 26px;
+}
+@media (max-width: 1399px) {
+  .newe .reportImageBox {
+    margin: 0px auto;
+  }
+}
+.newe .reportImage1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/report/web/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/report/web/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/report/web/css/Newe.css" />
+    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sticky-js@1.3.0/dist/sticky.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+
+
+
+</head>
+
+<body class="flex-column">
+    <div class="newe librarySection">
+        <div class="mainColumn">
+            <div class="navRow">
+                <button class="navItem" onclick="return_home()">Home</button>
+
+            </div>
+            <div class="contentColumn">
+                <h1 class="pageTitle">Hust Libary</h1>
+                <div class="reportColumn">
+                    <div class="reportHeaderColumn">
+                        <h1 class="reportTitle">Month report</h1>
+                        <div class="reportContentBox">
+                            <h3 class="reportSubtitle">Problem of this month :</h3>
+                            <div class="reportDetailsColumn">
+                                <h5 class="detailItem" id="1">Number of managing book :  <br /></h5>
+                                <h5 class="detailItem1" id="2">User id who not return book in time  : <br /></h5>
+                                <h5 class="detailItem2" id="3">Book low feedback : <br /></h5>
+
+                                <h5 class="detailItem3" id="4">Most Favourite Author: <br /></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+         fetch('/report/count').then(response => response.json())
+                    .then(data => { 
+                        console.log(data);
+                        const e1 = document.getElementById('1');
+                        e1.insertAdjacentHTML('beforeend', '<div>' + data[0].count + '</div>');
+
+
+                    }).catch(error => console.error('Error fetching data:', error));
+        fetch('/report/over').then(response => response.json())
+                    .then(data => { 
+                        console.log(data);
+                        let k=data.length;
+                        if(k==0){
+                            console.log("None");
+
+                        }
+                        else{
+
+                        const e2 = document.getElementById('2');
+                        let html = '';
+                        for (let i = 0; i < k; i++) {
+                            html += '<div>' + data[i].user_id + '</div>';
+                            // Thêm dấu cách và dấu chấm phẩy giữa các phần tử nếu không phải phần tử cuối cùng
+                            if (i < k - 1) {
+                                html += ' , ';
+                            }
+                        }
+
+                        e2.insertAdjacentHTML('beforeend', html);                        
+                    }
+                    }).catch(error => console.error('Error fetching data:', error));
+        fetch('/report/low').then(response => response.json())
+                    .then(data => { 
+                        console.log(data);
+                        let k=data.length;
+                        if(k==0){
+                            console.log("None");
+
+                        }
+                        else{
+
+                        const e3 = document.getElementById('3');
+                        let html = '';
+                        for (let i = 0; i < k; i++) {
+                            html += '<div>' + data[i].title + '</div>';
+                            // Thêm dấu cách và dấu chấm phẩy giữa các phần tử nếu không phải phần tử cuối cùng
+                            if (i < k - 1) {
+                                html += ' , ';
+                            }
+                        }
+
+                        e3.insertAdjacentHTML('beforeend', html);                        
+                    }
+                    }).catch(error => console.error('Error fetching data:', error));    
+        fetch('/report/high').then(response => response.json())
+                    .then(data => { 
+                        console.log(data);
+                        let k=data.length;
+                        if(k==0){
+                            console.log("None");
+
+                        }
+                        else{
+
+                        const e4 = document.getElementById('4');
+                        let html = ' ';
+                        for (let i = 0; i < k; i++) {
+                            
+                            html += '<div>' + data[i].name + '</div>';
+                            // Thêm dấu cách và dấu chấm phẩy giữa các phần tử nếu không phải phần tử cuối cùng
+                            if (i < k - 1) {
+                                html += ' ; ';
+                            }
+                        }
+
+                        e4.insertAdjacentHTML('beforeend', html);                        
+                    }
+                    }).catch(error => console.error('Error fetching data:', error));
+    </script>
+    <script type="text/javascript">
+        AOS.init();
+        new Sticky('.sticky-effect');
+            function return_home(){
+                window.location="http://localhost:4000";
+        }
+        
+    </script>
+    <script src = "re.js"></script>
+
+</body>
+
+</html>

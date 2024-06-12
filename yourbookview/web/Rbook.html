@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/yourbookview/web/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/yourbookview/web/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/yourbookview/web/css/Rbook.css" />
+    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sticky-js@1.3.0/dist/sticky.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+
+</head>
+<body class="flex-column">
+    <main class="rbook main">
+        <section class="section1">
+         
+            <div class="rect" onclick="show1()"></div>
+            <h3 class="subtitle" id="1"></h3>
+            <h3 class="subtitle1"></h3>
+
+            <div class="rect1"></div>
+            <h3 class="subtitle2" > Summary</h3>
+
+            <h5 class="highlight" >Total reading online</h5>
+            <h5 class="highlight1" id="11" > </h5>
+
+            <h5 class="highlight2">Total reserving offline</h5>
+            <h5 class="highlight3" id="12"></h5>
+
+            <h5 class="highlight11">Total</h5>
+            <h5 class="highlight12"></h5>
+
+            <h5 class="highlight4" >Average stars for all books</h5>
+            <h5 class="highlight5" id ="13"></h5>
+
+            <h3 class="subtitle21" id="rbook_nums"></h3>
+
+            <h1 class="hero_title">Book</h1>
+            <hr class="line" size="1" />
+
+            <div class="rect3" onclick="search()"></div>
+            <h3 class="subtitle3">Click to search for bookid or book name</h3>
+          
+           
+            <h1 class="title">Hust Libary</h1>
+            <button class="rect4" onclick="return_home()"></button>
+
+            <h5 class="highlight8">Home</h5>
+
+
+            <div class="rect2" onclick="show2()"></div>
+            <h3 class="subtitle5" id="2"></h3>
+            <h3 class="subtitle11"></h3>
+
+            <div class="rect5" onclick="show3()"></div>
+            <h3 class="subtitle6" id="3"></h3>
+            <h3 class="subtitle12"></h3>
+
+            <div class="rect6" onclick="show0()"></div>
+            <h3 class="subtitle50" id="0"></h3>
+
+
+            <h3 class="subtitle7" id="3"></h3>
+            <h3 class="subtitle13"></h3>
+            <div class="rect7" onclick="show3()"></div>
+
+            <h3 class="subtitle8" id="4"></h3>
+            <h3 class="subtitle14"></h3>
+            <div class="rect8" onclick="show4()"></div>
+
+            <h3 class="subtitle9" id="5"></h3>
+            <h3 class="subtitle15"></h3>
+            <div class="rect51" onclick="show5()"></div>
+            
+            <!-- <h2 class="medium_title">Plugins</h2>
+            <div class="rect61"></div>
+            <h2 class="medium_title1">Plugins</h2>
+            <div class="rect71"></div>
+            <h2 class="medium_title2">Plugins</h2>
+            <div class="rect72"></div>
+            <h2 class="medium_title3">Plugins</h2>
+            <div class="rect73"></div>
+            <h2 class="medium_title4">Plugins</h2> -->
+
+        </section>
+
+    </main>
+    <script type="text/javascript">
+        AOS.init();
+        new Sticky('.sticky-effect');
+        // Sử dụng Fetch API để lấy dữ liệu từ backend
+                
+        let savedData;
+
+        function fetchData() {
+            fetch('/viewbook/total') // Thay đổi URL này thành endpoint của bạn
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data)
+                    const element = document.querySelector('.subtitle21');
+                    if (element) {
+
+                        element.textContent = data[0].sum; // Hoặc sử dụng innerHTML nếu cần chèn HTML
+                        element.innerHTML = element.innerHTML + " Items"
+                    }
+                })
+                .catch(error => console.error('Error fetching data:', error));
+            fetch('/viewbook/on')
+                .then(response => response.json())
+                .then(data => { 
+
+                        const e11 = document.getElementById('11');
+                        if(e11){
+                        e11.textContent = data[0].count; // Hoặc sử dụng innerHTML nếu cần chèn HTML
+                        }
+
+                    }).catch(error => console.error('Error fetching data:', error));
+
+
+            fetch('/viewbook/title') // Thay đổi URL này thành endpoint của bạn
+                    .then(response => response.json())
+                    .then(data => {
+                        // Giả sử data là một object có thuộc tính cần hiển thị
+                        // Ví dụ: { number: 42 }
+                        savedData = data;
+
+                        const e0 = document.getElementById('0');
+                        const e1 = document.getElementById('1');
+                        const e2 = document.getElementById('2');
+                        const e3 = document.getElementById('3');
+                        const e4 = document.getElementById('4');
+                        const e5 = document.getElementById('5');
+
+                        e0.textContent = data[5].title; // Hoặc sử dụng innerHTML nếu cần chèn HTML
+                        e1.textContent = data[0].title; // Hoặc sử dụng innerHTML nếu cần chèn HTML
+                        e2.textContent = data[1].title; // Hoặc sử dụng innerHTML nếu cần chèn HTML
+                        e3.textContent = data[2].title; // Hoặc sử dụng innerHTML nếu cần chèn HTML
+                        e4.textContent = data[3].title; // Hoặc sử dụng innerHTML nếu cần chèn HTML
+                        e5.textContent = data[4].title; // Hoặc sử dụng innerHTML nếu cần chèn HTML
+                        
+                    })
+                    .catch(error => console.error('Error fetching data:', error));
+            
+
+            fetch('/viewbook/off').then(response => response.json())
+                    .then(data => { 
+                        console.log(data)
+                        const e12 = document.getElementById('12');
+                        e12.textContent = data[0].count; // Hoặc sử dụng innerHTML nếu cần chèn HTML
+
+
+                    }).catch(error => console.error('Error fetching data:', error));
+            fetch('/viewbook/avgs').then(response => response.json())
+                    .then(data => { 
+                        console.log(data)
+                        const e13 = document.getElementById('13');
+                        e13.textContent = data[0].t; // Hoặc sử dụng innerHTML nếu cần chèn HTML
+
+
+                    }).catch(error => console.error('Error fetching data:', error));
+
+            
+
+
+
+        }
+
+        // Gọi hàm fetchData khi trang được tải
+        document.addEventListener("DOMContentLoaded", fetchData);
+        function show0(){
+                            console.log(savedData[5]);
+                            // Hoặc hiển thị từng thuộc tính một
+                            alert("Book id: " + savedData[5].book_id + "\nGenre: " + savedData[5].genre + "\nStaff id: " + savedData[5].staff_id);
+                        }
+        function show1(){
+                            console.log(savedData[0]);
+                            // Hoặc hiển thị từng thuộc tính một
+                            alert("Book id: " + savedData[0].book_id + "\nGenre: " + savedData[0].genre + "\nStaff id: " + savedData[0].staff_id);
+                        }
+        function show2(){
+                            console.log(savedData[1]);
+                            // Hoặc hiển thị từng thuộc tính một
+                            alert("Book id: " + savedData[1].book_id + "\nGenre: " + savedData[1].genre + "\nStaff id: " + savedData[1].staff_id);
+                        }
+        function show3(){
+                            console.log(savedData[2]);
+                            // Hoặc hiển thị từng thuộc tính một
+                            alert("Book id: " + savedData[2].book_id + "\nGenre: " + savedData[2].genre + "\nStaff id: " + savedData[2].staff_id);
+                        }
+        function show4(){
+                            console.log(savedData[4]);
+                            // Hoặc hiển thị từng thuộc tính một
+                            alert("Book id: " + savedData[4].book_id + "\nGenre: " + savedData[4].genre + "\nStaff id: " + savedData[4].staff_id);
+        }
+        function show5(){
+                            console.log(savedData[4]);
+                            // Hoặc hiển thị từng thuộc tính một
+                            alert("Book id: " + savedData[4].book_id + "\nGenre: " + savedData[4].genre + "\nStaff id: " + savedData[4].staff_id);
+                        }
+        
+
+
+
+        function return_home(){
+                window.location="http://localhost:4000";
+
+        }
+        function search(){
+                window.location="http://localhost:4000/viewbook/search";
+
+        }
+
+    </script>
+    <script src = "re.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+.profile.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+.profile .userSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.profile .flexCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36px 0px;
+  margin: 31px auto 424px;
+  width: 92.15%;
+  max-width: 1326.953125px;
+}
+@media (max-width: 991px) {
+  .profile .flexCol {
+    margin: 31px auto 150px;
+  }
+}
+@media (max-width: 575px) {
+  .profile .flexCol {
+    margin: 31px auto 80px;
+  }
+}
+@media (max-width: 383px) {
+  .profile .flexCol {
+    margin: 31px auto 50px;
+  }
+}
+.profile .userInfo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 9px 0px;
+  width: 233px;
+  max-width: 85%;
+}
+.profile .welcomeTitle {
+  position: relative;
+  font: 500 24px/1.5 "Poppins", Helvetica, Arial, serif;
+  color: #3e435d;
+}
+@media (max-width: 991px) {
+  .profile .welcomeTitle {
+    align-items: flex-start;
+    font-size: 22px;
+  }
+}
+@media (max-width: 479px) {
+  .profile .welcomeTitle {
+    font-size: 20px;
+  }
+}
+.profile .currentDate {
+  position: relative;
+  font: 300 16px/1.5 "Poppins", Helvetica, Arial, serif;
+  color: #ada7a7;
+}
+.profile .userAvatarSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px 0px;
+  margin: 0px auto;
+  width: 96.61%;
+}
+.profile .avatarRect {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background-color: #e5fbe3;
+}
+.profile .editGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 95.01%;
+}
+.profile .editWrapper {
+  position: absolute;
+  top: 28px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 93px;
+  height: 44px;
+  background-color: #4182f9;
+  border-radius: 8px 8px 8px 8px;
+}
+.profile .editText {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 10px 32px;
+  width: 29px;
+  max-width: 85%;
+  height: 24px;
+  font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  .profile .editText {
+    margin: 10px 16px;
+  }
+}
+@media (max-width: 383px) {
+  .profile .editText {
+    margin: 10px 8px;
+  }
+}
+.profile .detailsRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+}
+@media (max-width: 991px) {
+  .profile .detailsRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+.profile .flexCol3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px 0px;
+  width: 593px;
+  min-width: 0px;
+}
+@media (max-width: 991px) {
+  .profile .flexCol3 {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.profile .userDetailsRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0px 24px;
+}
+@media (max-width: 575px) {
+  .profile .userDetailsRow {
+    -moz-column-gap: 16px;
+    column-gap: 16px;
+  }
+}
+@media (max-width: 383px) {
+  .profile .userDetailsRow {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+  }
+}
+.profile .userImage {
+  position: relative;
+  width: 100px;
+  min-width: 0px;
+  height: 100px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.profile .flexCol4 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0px;
+  width: 198px;
+  min-width: 0px;
+}
+.profile .userName {
+  position: relative;
+  font: 500 20px/1.5 "Poppins", Helvetica, Arial, serif;
+  color: black;
+}
+@media (max-width: 991px) {
+  .profile .userName {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .profile .userName {
+    font-size: 16px;
+  }
+}
+.profile .userEmail {
+  position: relative;
+  font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+  color: black;
+  opacity: 0.5;
+}
+.profile .userAttributes {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.profile .nameLabel {
+  position: relative;
+  font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+  color: black;
+  opacity: 0.8;
+}
+.profile .nameBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0px 0px;
+  background-color: #f3fbeb;
+  border-radius: 8px 8px 8px 8px;
+}
+.profile .namePlaceholder {
+  position: relative;
+  margin: 14px 0px 14px 20px;
+  width: 125px;
+  max-width: 85%;
+  font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+  color: black;
+  opacity: 0.4;
+}
+@media (max-width: 575px) {
+  .profile .namePlaceholder {
+    margin: 14px 0px 14px 16px;
+  }
+}
+@media (max-width: 383px) {
+  .profile .namePlaceholder {
+    margin: 14px 0px 14px 8px;
+  }
+}
+.profile .genderLabel {
+  position: relative;
+  margin: 24px 0px 0px;
+  font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+  color: black;
+  opacity: 0.8;
+}
+.profile .genderBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0px 0px;
+  background-color: #f3fbeb;
+  border-radius: 8px 8px 8px 8px;
+}
+.profile .genderIcon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  transform: translate(0, -50%);
+}
+.profile .genderPlaceholder {
+  position: relative;
+  margin: 14px 0px 14px 20px;
+  width: 125px;
+  max-width: 85%;
+  font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+  color: black;
+  opacity: 0.4;
+}
+@media (max-width: 575px) {
+  .profile .genderPlaceholder {
+    margin: 14px 0px 14px 16px;
+  }
+}
+@media (max-width: 383px) {
+  .profile .genderPlaceholder {
+    margin: 14px 0px 14px 8px;
+  }
+}
+.profile .otherAttributes {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 132px 0px 0px;
+  width: 593px;
+  min-width: 0px;
+}
+@media (max-width: 991px) {
+  .profile .otherAttributes {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.profile .idLabel {
+  position: relative;
+  font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+  color: black;
+  opacity: 0.8;
+}
+.profile .idPlaceholder {
+  position: relative;
+  margin: 12px 0px 0px;
+  font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+  color: black;
+  background-color: #f3fbeb;
+  border-radius: 8px 8px 8px 8px;
+  padding: 14px 20px 14px 20px;
+  opacity: 0.4;
+}
+@media (max-width: 575px) {
+  .profile .idPlaceholder {
+    padding: 14px 16px 14px 16px;
+  }
+}
+@media (max-width: 383px) {
+  .profile .idPlaceholder {
+    padding: 14px 8px 14px 8px;
+  }
+}
+.profile .countryLabel {
+  position: relative;
+  margin: 24px 0px 0px;
+  font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+  color: black;
+  opacity: 0.8;
+}
+.profile .countryGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0px 0px;
+}
+.profile .countryPlaceholder {
+  position: relative;
+  min-width: 0px;
+  font: 400 16px/1.5 "Poppins", Helvetica, Arial, serif;
+  color: black;
+  background-color: #f3fbeb;
+  border-radius: 8px 8px 8px 8px;
+  padding: 14px 20px 14px 20px;
+  opacity: 0.4;
+}
+@media (max-width: 575px) {
+  .profile .countryPlaceholder {
+    padding: 14px 16px 14px 16px;
+  }
+}
+@media (max-width: 383px) {
+  .profile .countryPlaceholder {
+    padding: 14px 8px 14px 8px;
+  }
+}
+.profile .countryFlagIcon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  transform: translate(0, -50%);
+}

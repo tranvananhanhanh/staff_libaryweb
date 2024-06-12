@@ -1,0 +1,261 @@
+@use "utils" as *;
+@use "global" as *;
+
+.newe {
+  &.librarySection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 32px 32px 32px 32px;
+    overflow: hidden;
+  }
+  .mainColumn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 86px;
+    width: 89.31%;
+    max-width: 1286.0625px;
+    @include xs {
+      margin: 30px auto 80px;
+    }
+    @include tn {
+      margin: 30px auto 50px;
+    }
+  }
+  .navRow {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 0px 10px;
+    margin: 0px 12px 0px auto;
+    width: 380px;
+    max-width: 85%;
+    @include tn {
+      column-gap: 8px;
+      margin: 0px 8px 0px auto;
+    }
+  }
+  .navItem {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 10px;
+    font: 600 20px/1.29 "Libre Franklin", Helvetica, Arial, serif;
+    color: rgb(20, 30, 12);
+    text-align: center;
+    @include md {
+      font-size: 18px;
+    }
+    @include xxs {
+      font-size: 16px;
+    }
+  }
+  .navIconBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 102px;
+    min-width: 0px;
+    background-color: rgb(71, 103, 48);
+    border-radius: 18px 18px 18px 18px;
+    padding: 0px 0px 0px 14px;
+    @include tn {
+      padding: 0px 0px 0px 8px;
+    }
+  }
+  .navIcon {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contentColumn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 65px 0px;
+    @include tn {
+      gap: 50px 0px;
+    }
+  }
+  .pageTitle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font: 500 36px/1 "Newsreader", Helvetica, Arial, serif;
+    color: rgb(20, 30, 12);
+    letter-spacing: -0.36px;
+    @include md {
+      font-size: 32px;
+    }
+    @include xxs {
+      font-size: 30px;
+    }
+  }
+  .reportColumn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 69px 0px;
+    width: 94.25%;
+    @include tn {
+      gap: 50px 0px;
+    }
+  }
+  .reportHeaderColumn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 33px 0px;
+  }
+  .reportTitle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 41.38% 0px auto;
+    width: 187px;
+    max-width: 85%;
+    font: 400 32px/1.2 "Newsreader", Helvetica, Arial, serif;
+    color: rgb(20, 30, 12);
+    text-align: center;
+    letter-spacing: -0.64px;
+    @include xl {
+      margin: 0px auto;
+    }
+    @include md {
+      font-size: 30px;
+    }
+    @include xxs {
+      font-size: 26px;
+    }
+  }
+  .reportContentBox {
+    position: relative;
+    display: flex;
+    gap: 0px 16px;
+    background-color: rgb(237, 239, 228);
+    border-radius: 24px 24px 24px 24px;
+    padding: 35px 0px 54px 25px;
+    outline: 2px solid rgb(225, 228, 217);
+    outline-offset: -2px;
+    @include xl {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 16px;
+    }
+    @include xs {
+      padding: 35px 0px 54px 16px;
+    }
+    @include tn {
+      padding: 35px 0px 50px 8px;
+    }
+  }
+  .reportSubtitle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 74.5px 0px 261.5px;
+    font: 700 20px/1.6 "Libre Franklin", Helvetica, Arial, serif;
+    color: rgb(20, 30, 12);
+    letter-spacing: 0.8px;
+    @include xl {
+      margin-top: unset;
+      margin-bottom: unset;
+      width: 100%;
+    }
+    @include md {
+      font-size: 18px;
+    }
+    @include xxs {
+      font-size: 16px;
+    }
+  }
+  .reportDetailsColumn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 859px;
+    min-width: 0px;
+    @include xl {
+      margin-top: unset;
+      margin-bottom: unset;
+      width: 100%;
+      min-width: unset;
+    }
+  }
+  .detailItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font: 400 16px/1.6 "Libre Franklin", Helvetica, Arial, serif;
+    color: rgb(20, 30, 12);
+  }
+  .detailItem1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 51.5px 0px 0px;
+    font: 400 16px/1.6 "Libre Franklin", Helvetica, Arial, serif;
+    color: rgb(20, 30, 12);
+    @include tn {
+      margin: 50px 0px 0px;
+    }
+  }
+  .reportImage {
+    position: relative;
+    margin: 24.5px 0px 0px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .detailItem2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 50.5px 0px 0px;
+    font: 400 16px/1.6 "Libre Franklin", Helvetica, Arial, serif;
+    color: rgb(20, 30, 12);
+    @include tn {
+      margin: 50px 0px 0px;
+    }
+  }
+  .detailItem3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 85.5px 0px 0px;
+    font: 400 16px/1.6 "Libre Franklin", Helvetica, Arial, serif;
+    color: rgb(20, 30, 12);
+    @include xs {
+      margin: 80px 0px 0px;
+    }
+    @include tn {
+      margin: 50px 0px 0px;
+    }
+  }
+  .reportImageBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 40.43%;
+    width: 195px;
+    max-width: 85%;
+    background-color: rgb(237, 239, 228);
+    border-radius: 24px 24px 24px 24px;
+    padding: 3px 25px 0px 26px;
+    @include xl {
+      margin: 0px auto;
+    }
+  }
+  .reportImage1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<!--  This source code is exported from pxCode, you can get more document from https://www.pxcode.io  -->
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/pxcode-html/web/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/pxcode-html/web/css/UntitledPage.css" />
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5500/pxcode-html/web/css/fonts.css" />
+
+    
+
+
+    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sticky-js@1.3.0/dist/sticky.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+
+
+
+</head>
+
+<body class="flex-column">
+    <main class="untitled-page main">
+        <section class="section1">
+            
+            <div class="rect"></div>
+            <div class="rect1"></div>
+            <h5 class="highlight">Notification</h5>
+            <h3 class="subtitle_box">
+                <span class="subtitle"
+            ><span class="subtitle_span0">Hà Nội</span><span class="subtitle_span1">  —  August 21 2023</span></span>
+            </h3>
+            <h1 class="hero_title">Hust Libary</h1>
+            <hr class="line" size="1" />
+            <h1 class="title">Staff</h1>
+            <div class="rect2"></div>
+            <h5 class="highlight1">Log out</h5>
+            <h5 class="highlight10">My profile</h5>
+
+            <div class="rect4" onclick="View_myBook()"></div>
+            <button class="rect3" onclick="Show_Profile()">My Profile</button>
+
+            <h3 class="subtitle1">Warehouse</h3>
+            <h3 class="subtitle2">Total</h3>
+            <h5 class="highlight11">Books in libary </h5>
+            <div class="rect5" onclick="Calen()"></div>
+            <h3 class="subtitle11">Calender</h3>
+            <h3 class="subtitle21">Your task</h3>
+            <h5 class="highlight12">Off-line work schedule</h5>
+            <div class="rect41" onclick="Update() " ></div>
+            <h3 class="subtitle12" >View Book  </h3>
+            <h3 class="subtitle22">All books</h3>
+            <h5 class="highlight13">Update new book or change in4 of mananing books </h5>
+            <div class="rect6" onclick="Month_report()"></div>
+            <h3 class="subtitle13">Months report</h3>
+            <h3 class="subtitle23">Creat new report</h3>
+            <h5 class="highlight14">The problem of libary</h5>
+            <div class="rect7"></div>
+            <h3 class="subtitle14">Contact</h3>
+            <h3 class="subtitle24">Send messages to users</h3>
+            <h5 class="highlight15">Solve troubles of users</h5>
+        </section>
+
+    </main>
+    <script type="text/javascript">
+        AOS.init();
+        new Sticky('.sticky-effect');
+    </script>
+    <script>
+      
+        function View_myBook(){
+                window.location="http://localhost:4000/viewbook";
+
+        }
+        function Update(){
+            window.location="http://127.0.0.1:5500/updateview/web/Staff_fix.html";
+        }
+        function Calen(){
+            window.location="http://localhost:4000/Calender";
+        }
+        function Month_report(){
+            window.location="http://localhost:4000/report";
+        }
+        function Show_Profile(){
+            window.location="http://localhost:4000/profile";
+        }
+        
+
+
+
+    </script>
+    
+
+</body>
+
+</html>
